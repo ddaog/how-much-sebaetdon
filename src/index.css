@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Toss Design Tokens */
+  --color-blue-500: #3182f6;
+  --color-blue-600: #1b64da;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f2f4f6;
+  --color-gray-200: #e5e8eb;
+  --color-gray-300: #d1d6db;
+  --color-gray-400: #b0b8c1;
+  --color-gray-500: #8b95a1;
+  --color-gray-600: #6b7684;
+  --color-gray-700: #4e5968;
+  --color-gray-800: #333d4b;
+  --color-gray-900: #191f28;
+
+  --rounded-sm: 8px;
+  --rounded-md: 12px;
+  --rounded-lg: 18px;
+  --rounded-xl: 24px;
+  --rounded-2xl: 32px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+  min-height: 100vh;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-gray-900);
+  font-weight: 700;
+}
+
+p {
+  color: var(--color-gray-700);
+  line-height: 1.6;
+}
+
+/* Custom Utilities based on Toss examples */
+.toss-card {
+  background-color: #ffffff;
+  border-radius: var(--rounded-2xl);
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.toss-button-primary {
+  background-color: var(--color-blue-500);
+  color: #ffffff;
+  border-radius: var(--rounded-md);
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.toss-button-primary:active {
+  background-color: var(--color-blue-600);
+  transform: scale(0.98);
+}
